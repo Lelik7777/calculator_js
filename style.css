@@ -1,0 +1,61 @@
+*,
+*::after,
+*::before {
+  box-sizing: border-box;
+}
+:root {
+  --color-primary: rgba(255, 255, 255, 0.75);
+  --color-primary-light: rgba(255, 255, 255, 0.9);
+  --color-primary-secondary: rgba(0, 0, 0, 0.75);
+  --color-light: #ffffff;
+}
+html {
+  font-size: 10px;
+}
+.body {
+  margin: 0;
+  padding: 0;
+  font-size: 1.4rem;
+  font-family: Roboto sans-serif;
+  font-weight: 700;
+
+  background: linear-gradient(to right, rgb(90, 125, 201), rgb(204, 228, 72));
+}
+.calculator-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 100px);
+  grid-template-rows: minmax(150px, auto) repeat(5, 100px);
+  justify-content: center;
+  align-content: center;
+  height: 100vh;
+}
+.output {
+  grid-column: 1 / span 4;
+  display: flex;
+  flex-flow: column;
+  align-items: flex-end;
+  justify-content: space-around;
+
+  padding: 10px;
+  background-color: var(--color-primary-secondary);
+}
+.previous-operand {
+  color: var(--color-primary);
+  font-size: 1.5rem;
+}
+.current-operand {
+  color: var(--color-light);
+  font-size: 2rem;
+}
+.button {
+  background-color: var(--color-primary);
+  border: 1px solid var(--color-light);
+  cursor: pointer;
+  font-size: 3rem;
+}
+.button:hover {
+  background-color: var(--color-primary-light);
+}
+.span-two {
+  grid-column: span 2;
+}
