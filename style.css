@@ -41,11 +41,11 @@ html {
 }
 .previous-operand {
   color: var(--color-primary);
-  font-size: 1.5rem;
+  font-size: 2rem;
 }
 .current-operand {
   color: var(--color-light);
-  font-size: 2rem;
+  font-size: 2.5rem;
 }
 .button {
   background-color: var(--color-primary);
